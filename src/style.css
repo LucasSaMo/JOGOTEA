@@ -1,0 +1,93 @@
+
+/* Estilos básicos */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(135deg, #6D012B,#DAA520) ;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Título */
+h1 {
+    color: #DAA520;
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Botões de tema com imagem */
+.theme-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    background-color:#440920;
+    color: rgb(255, 255, 255);
+    transition: background 0.3s;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 60
+px;
+}
+
+button:hover {
+    background-color: #8b1e3f;
+}
+
+/* Tabuleiro do quebra-cabeça */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.piece:hover {
+    transform: scale(1.05);
+}
+
+/* Mensagem de vitória */
+#winMessage {
+    display: none;
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Caixa de descrição */
+#description {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
